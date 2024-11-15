@@ -63,6 +63,21 @@
     text-decoration: underline;
 }
 
+.counters::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity for dark overlay */
+    z-index: 0;
+}
+.counters .container-fluid {
+    position: relative;
+    z-index: 1; /* To keep content above overlay */
+}
+
 .service-item {
     text-align: center;
     padding: 20px;
@@ -206,7 +221,14 @@ h6,
     outline: none;
     transition: .5s;
 }
+.navbar-brand {
+    font-size: 1.5rem; /* Adjust font size */
+}
 
+.navbar-nav .nav-link {
+    margin-right: 1rem;
+    font-size: 1rem; /* Adjust link font size */
+}
 .sticky-top.navbar-dark .navbar-nav .nav-link {
     padding: 20px 0;
     color: var(--dark);
@@ -307,7 +329,18 @@ h6,
         font-weight: 600 !important;
     }
 }
+.navbar-brand h1 {
+    display: inline-block;
+    font-size: 1.2rem; /* Reduce brand text size on mobile */
+}
 
+.navbar-brand i {
+    font-size: 1.5rem; /* Adjust icon size for mobile */
+}
+
+.navbar-nav .nav-link {
+    margin-right: 0; /* Remove margin for mobile */
+}
 .carousel-control-prev,
 .carousel-control-next {
     width: 10%;
