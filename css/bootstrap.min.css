@@ -3081,8 +3081,8 @@
 
  .btn-primary {
      color: #000;
-     background-color: #06A3DA;
-     border-color: #06A3DA
+     background-color: #000080;
+     /* border-color: #06A3DA */
  }
 
  .btn-primary:hover {
@@ -8283,7 +8283,7 @@
  }
 
  .text-primary {
-     color: #06A3DA !important
+     color: #000080 !important
  }
 
  .text-secondary {
@@ -8339,7 +8339,7 @@
  }
 
  .bg-primary {
-     background-color: #06A3DA !important
+     background-color: #000080 !important
  }
 
  .bg-secondary {
